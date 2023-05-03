@@ -40,19 +40,13 @@ public class Main {
 //        System.out.println(num1);
 
         //exer5
-        //skip
-//        System.out.println("Input first number");
-//        int numm1= s.nextInt();
-//        System.out.println("Input second number");
-//        int numm2= s.nextInt();
-//        int numm3=numm1;
-//        for(int i = numm2-1; i>=1 ; i--){
-//            numm3=numm1;
-//            numm1=numm1*numm3;
-//
-//            System.out.println(numm1);
-//        }
-//        System.out.println(numm1);
+//       System.out.print("Input first number:");
+// 		 int number = s.nextInt(); 
+// 		 int fact=1;
+// 		  for(int i=1;i<=number;i++){    
+// 		      fact=fact*i;    
+// 		  }    
+// 		  System.out.println("Factorial is: "+fact); 
 
         //exer6
 //        int odd=0;
