@@ -117,19 +117,17 @@ public class Main {
 //            char c1;
 //            char c2;
 //            int j =word.length()-1;
-//            for(int i= 0 ; i<j/2 -1 ; i++){
+//            for(int i= 0 ; i<=j/2  ; i++){
 //                c1= word.charAt(i);
-//                c2= word.charAt(j);
-//                if(c1 == c2)
-//                    continue;
-//                else {
+//                c2= word.charAt(j--);
+//                if(c1 != c2) {
 //                    System.out.println("not a palindrome ");
 //                    flag = false;
 //                    break;
 //                }
 //            }
 //            if(flag)
-//                System.out.println("palindrome ");
+//                System.out.println("palindrome");
 
     }
 }
