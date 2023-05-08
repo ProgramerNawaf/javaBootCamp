@@ -25,7 +25,7 @@ public class Main {
 //            a1.getBalance();
 //            a2.getBalance();
 //            System.out.println("------------------");
-//            System.out.println("Nawaf balance " + a1.TransferTo(a2, 25));
+//            a1.TransferTo(a2, 25);
 //            a2.getBalance();
 //            //cant credit or transfer because he has no balance
 //            a1.credit(10);
