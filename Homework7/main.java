@@ -12,19 +12,26 @@ public class Main {
 //        e1.raisedSalary(50);
 //        System.out.println(e1.getSalary());
 
-        //Account testing
-//        Account a1 = new Account("11","Nawaf",50);
-//        Account a2 = new Account("22","faisal");
+       //Account testing
 //
-//        System.out.println("Nawaf balance: "+a1.getBalance());
-//        System.out.println("Faisal balance: "+a2.getBalance());
-//        System.out.println("------------------");
-//        a1.credit(25);
-//        a2.debit(10);
-//        System.out.println("Nawaf balance: "+a1.getBalance());
-//        System.out.println("Faisal balance: "+a2.getBalance());
-//        System.out.println("------------------");
-//        System.out.println("Nawaf balance "+a1.TransferTo(a2,25));
-//        System.out.println("Faisal balance: "+a2.getBalance());
+//            Account a1 = new Account("11", "Nawaf", 50);
+//            Account a2 = new Account("22", "faisal");
+//
+//            System.out.println(a1.getBalance());
+//            System.out.println(a2.getBalance());
+//            System.out.println("------------------");
+//            a1.credit(25);
+//            a2.debit(10);
+//            a1.getBalance();
+//            a2.getBalance();
+//            System.out.println("------------------");
+//            System.out.println("Nawaf balance " + a1.TransferTo(a2, 25));
+//            a2.getBalance();
+//            //cant credit or transfer because he has no balance
+//            a1.credit(10);
+//            a1.TransferTo(a2,10);
+//
+//            System.out.println("------------------");
+//            System.out.println(a1.toString() + " "+ a2.toString());
     }
 }
