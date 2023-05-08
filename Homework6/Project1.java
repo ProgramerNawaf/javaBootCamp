@@ -85,8 +85,8 @@ public class Project1 {
                     System.out.println(e1.getMessage());
                     s.next();
                 }
-                catch (Exception e2){
-                    System.out.println(e2.getMessage());
+                catch (Exception e3){
+                    System.out.println(e3.getMessage());
                 }
 
             }
@@ -114,7 +114,7 @@ public class Project1 {
             System.out.println("Congrats you won");
             return false;
         }
-        if (arr[0][0] == "x" && arr[1][1] == "x" && arr[2][2] == "x" || arr[0][2] == "x" && arr[1][1] == "x" && arr[2][1] == "x") {
+        if (arr[0][0] == "x" && arr[1][1] == "x" && arr[2][2] == "x" || arr[0][2] == "x" && arr[1][1] == "x" && arr[2][0] == "x") {
             System.out.println("Congrats you won");
             return false;
         }
@@ -179,7 +179,7 @@ public class Project1 {
             System.out.println("Computer Won Good Luck Next Time");
             return false;
         }
-        if(arr[0][0] == "O" && arr[1][1] == "0" && arr[2][2] == "0" || arr[0][2] == "O" && arr[1][1] == "0" && arr[2][1] == "O"){
+        if(arr[0][0] == "O" && arr[1][1] == "0" && arr[2][2] == "0" || arr[0][2] == "O" && arr[1][1] == "0" && arr[2][0] == "O"){
             System.out.println("Computer Won Good Luck Next Time");
             return false;
         }
