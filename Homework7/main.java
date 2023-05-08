@@ -12,7 +12,7 @@ public class Main {
 //        e1.raisedSalary(50);
 //        System.out.println(e1.getSalary());
 
-       //Account testing
+        //Account testing
 //
 //            Account a1 = new Account("11", "Nawaf", 50);
 //            Account a2 = new Account("22", "faisal");
@@ -33,5 +33,6 @@ public class Main {
 //
 //            System.out.println("------------------");
 //            System.out.println(a1.toString() + " "+ a2.toString());
+
     }
 }
