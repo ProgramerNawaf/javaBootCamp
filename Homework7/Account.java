@@ -45,18 +45,22 @@ public class Account {
         this.balance = balance;
     }
 
-    public int credit (int amount ) {
-        try{
-        if(this.balance == 0 ) {
-            throw new Exception("Can not credit !Account has zero Balance");
+    public int credit (int amount )  {
+    try {
+        if (this.balance == 0) {
+            throw new ArithmeticException("Can not credit !Account has zero Balance");
         }
-            this.balance -= amount;
-            return balance;
+        if (this.balance < amount) {
+            throw new Exception("You dont have enough balance!");
+        }
+        this.balance -= amount;
+        return balance;
+    }catch (Exception e){
+        System.out.println(e.getMessage());
+        return 0;
+    }
 
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-            return 0;
-        }
+
 
     }
     public int debit (int amount ){
@@ -65,11 +69,26 @@ public class Account {
     }
 
     public int TransferTo(Account another , int amount ){
+        boolean flag = false;
+        try{
+        if(another == null )
+        {
+            throw new Exception("The account your trying to transfer to dosent exist!");
+        }
 
-        another.debit(amount);
-        this.credit(amount);
+            if(this.balance >0)
+                flag=true;
+            this.credit(amount);
+            if(flag)
+            another.debit(amount);
+
+
         System.out.println(this.toString());
         return this.balance;
+    }catch (Exception e){
+        System.out.println(e.getMessage());
+        return 0;
+    }
     }
 
     @Override
