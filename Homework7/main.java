@@ -13,26 +13,39 @@ public class Main {
 //        System.out.println(e1.getSalary());
 
         //Account testing
-//
-//            Account a1 = new Account("11", "Nawaf", 50);
-//            Account a2 = new Account("22", "faisal");
-//
-//            System.out.println(a1.getBalance());
-//            System.out.println(a2.getBalance());
-//            System.out.println("------------------");
-//            a1.credit(25);
-//            a2.debit(10);
-//            a1.getBalance();
-//            a2.getBalance();
-//            System.out.println("------------------");
-//            a1.TransferTo(a2, 25);
-//            a2.getBalance();
-//            //cant credit or transfer because he has no balance
-//            a1.credit(10);
-//            a1.TransferTo(a2,10);
-//
-//            System.out.println("------------------");
-//            System.out.println(a1.toString() + " "+ a2.toString());
+
+    //Nawaf 50  , faisal 0
+    Account a1 = new Account("11", "Nawaf", 50);
+    Account a2 = new Account("22", "faisal");
+    System.out.println(a1.toString() + " " + a2.toString());
+    System.out.println("------------------");
+
+    System.out.println(a1.getBalance());
+    System.out.println(a2.getBalance());
+    System.out.println("------------------");
+    //Nawaf 25  , faisal 10
+    a1.credit(25);
+    a2.debit(10);
+    a1.getBalance();
+    a2.getBalance();
+    System.out.println("------------------");
+    //Nawaf 0  , faisal 35
+    a1.TransferTo(a2, 25);
+    a2.getBalance();
+    System.out.println("------------------");
+    //Nawaf cant credit or transfer because he has no balance
+    a1.credit(10);
+    a1.TransferTo(a2, 10);
+    System.out.println("------------------");
+    //Faisal trying to credit or transfer when he dosent have enough balance
+    a2.credit(100);
+    a2.TransferTo(a1, 100);
+    System.out.println("------------------");
+    //trying to transfer to a null account
+    Account a3=null;
+    a2.TransferTo(a3,50);
+
+
 
     }
 }
